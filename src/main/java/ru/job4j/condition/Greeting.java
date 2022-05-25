@@ -6,7 +6,7 @@ public class Greeting {
         System.out.println(idea);
         idea = idea + " But I'm a newbie";
         int year = 2022;
-        String result = idea + year;
-        System.out.println(result);
+        idea = idea + year;
+        System.out.println(idea);
     }
 }
