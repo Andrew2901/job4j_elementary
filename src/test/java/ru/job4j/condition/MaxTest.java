@@ -12,4 +12,29 @@ public class MaxTest {
         int expected = 2;
         Assert.assertEquals(result, expected);
     }
+    @Test
+    public void whenMax25to5Then25() {
+        int left = 25;
+        int right = 5;
+        int result = Max.max(left, right);
+        int expected = 25;
+        Assert.assertEquals(result, expected);
+    }
+    @Test
+    public void when120to15Then120() {
+        int left = 15;
+        int right = 120;
+        int result = Max.max(left, right);
+        int expected = 120;
+        Assert.assertEquals(result, expected);
+    }
+
+    @Test
+    public void when30to30Then30() {
+        int left = 30;
+        int right = 30;
+        int result = Max.max(left, right);
+        int expected = 30;
+        Assert.assertEquals(result, expected);
+    }
 }
