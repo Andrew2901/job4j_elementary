@@ -1,30 +1,30 @@
 package ru.job4j.condition;
 
-import org.junit.jupiter.api.Test;
-import static org.assertj.core.api.Assertions.assertThat;
+import org.junit.Assert;
+import org.junit.Test;
 
 public class DummyBotTest {
     @Test
     public void whenGreetBot() {
-        String in = "Hi, Bot.";
+        String in = "Привет, Бот.";
         String result = DummyBot.answer(in);
-        String expected = "Hi, SmartAss.";
-        assertThat(result).isEqualTo(expected);
+        String expected = "Привет, умник.";
+        Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenByeBot() {
-        String in = "Bye.";
+        String in = "Пока.";
         String result = DummyBot.answer(in);
-        String expected = "See you later.";
-        assertThat(result).isEqualTo(expected);
+        String expected = "До скорой встречи.";
+        Assert.assertEquals(expected, result);
     }
 
     @Test
     public void whenUnknownBot() {
-        String in = "Can you add two plus two?";
+        String in = "Сколько будет 2 + 2?";
         String result = DummyBot.answer(in);
-        String expected = "I don't know. Please, ask another question.";
-        assertThat(result).isEqualTo(expected);
+        String expected = "Это ставит меня в тупик. Задайте другой вопрос.";
+        Assert.assertEquals(expected, result);
     }
 }
