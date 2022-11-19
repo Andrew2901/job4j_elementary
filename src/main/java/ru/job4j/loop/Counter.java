@@ -29,4 +29,3 @@ public class Counter {
         System.out.println(sumByEven(1, 1));
     }
 }
-
