@@ -44,3 +44,4 @@ public class FitnessTest {
     public void calc() {
     }
 }
+
