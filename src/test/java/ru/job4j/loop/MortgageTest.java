@@ -33,4 +33,8 @@ public class MortgageTest {
         int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
+
+    @org.junit.Test
+    public void year() {
+    }
 }
