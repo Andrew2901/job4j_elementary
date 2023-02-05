@@ -12,8 +12,7 @@ public class Machine {
             for (int coin : coins) {
                 while (change - coin >= 0) {
                     change = change - coin;
-                    rsl[size] = coin;
-                    size++;
+                    rsl[size++] = coin;
                 }
             }
         }
