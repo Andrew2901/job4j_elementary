@@ -13,6 +13,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isTrue();
     }
+
     @Test
     public void whenHasNoMonoHorizontal() {
         char[][] input = {
@@ -24,6 +25,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoHorizontal(input, row);
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenHasMonoVertical() {
         char[][] input = {
@@ -35,6 +37,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isTrue();
     }
+
     @Test
     public void whenHasNoMonoVertical() {
         char[][] input = {
@@ -46,6 +49,7 @@ public class MatrixCheckTest {
         boolean result = MatrixCheck.monoVertical(input, column);
         assertThat(result).isFalse();
     }
+
     @Test
     public void whenDiagonalFullX() {
         char[][] input = {
@@ -57,6 +61,7 @@ public class MatrixCheckTest {
         char[] expected = {'X', 'X', 'X'};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenDiagonalFullOne() {
         char[][] input = {
@@ -68,6 +73,7 @@ public class MatrixCheckTest {
         char[] expected = {'1', '1', '1'};
         assertThat(result).containsExactly(expected);
     }
+
     @Test
     public void whenDiagonalMix() {
         char[][] input = {
